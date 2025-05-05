@@ -1,44 +1,46 @@
-Name:
+Name: Sara Salha
 
-Number of elements:
+Number of elements: 10000
 
 Bubble Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 2.429499864578247 seconds
+Reversed: 5.749253511428833 seconds
+Random: 4.509773254394531 seconds
 
 Bubble Sort Early Exit
-Sorted:
-Reversed:
-Random:
+Sorted: 0.0004851818084716797 seconds
+Reversed: 5.979274034500122 seconds
+Random: 4.687915086746216 seconds
 
 Selection Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 2.1150259971618652 seconds
+Reversed: 1.9332561492919922 seconds
+Random: 2.121962547302246 seconds
 
 Insertion Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 0.0008771419525146484 seconds
+Reversed: 3.913034439086914 seconds
+Random: 2.1011483669281006 seconds
 
 Merge Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 0.015247583389282227 seconds
+Reversed: 0.01645803451538086 seconds
+Random:0.0201418399810791 seconds
 
 Questions to answer:
 1) What was the worst case scenario for any sorting technique?
-
+Bubble Sort Early Exit on the reversed list — it had to make the most swaps and took the longest.
 
 2) The first 3 sorts have the same runtime of O(n^2). Why were the times different? Why would one be more efficient than the others?
-
+Even with the same big-O, the number of swaps and how each sort moves through the list makes a difference. Selection Sort swaps less, and Bubble Sort Early Exit stops early if the list is sorted.
 
 3) Why was merge sort so much more efficient?
-
+Merge Sort is O(n log n), which scales better. It divides the list and merges efficiently instead of repeatedly scanning it.
 
 4) The built-in sorting technique for most programming languages is known as TimSort.
 This is a merge sort until the arrays have fewer than 10 elements, then it does an insertion sort. Why would this be useful?
-
+Insertion Sort is simple and fast for small or mostly sorted lists, so it speeds things up when used on small chunks.
 
 5) What issues can you see with a recursive sorting technique like merge sort?
+It uses more memory and can hit recursion limits on very large lists, especially in systems with limited stack space.
+ 
